@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/', function (request, response) {
-  response.sendFile(__dirname + '/index.html');
+  response.send("Hello World")
 });
 
 app.use('/ping', (req, res) => {
